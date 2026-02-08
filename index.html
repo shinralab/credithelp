@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CreditHelp.info | Credit Help, Credit Building Tips, and Step-by-Step Guides</title>
+  <meta name="description" content="CreditHelp.info offers clear, empathetic credit help: credit basics, credit building tips, dispute guidance, and resources to improve your credit score—one step at a time." />
+  <meta name="robots" content="index, follow" />
+  <style>
+    :root{
+      --bg0:#060814;
+      --bg1:#0a1022;
+      --panel: rgba(255,255,255,.06);
+      --panel2: rgba(255,255,255,.085);
+      --border: rgba(255,255,255,.14);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.72);
+      --muted2: rgba(255,255,255,.58);
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --shadow2: 0 12px 30px rgba(0,0,0,.34);
+      --radius: 18px;
+      --radius2: 14px;
+      --accent1:#7c3aed;
+      --accent2:#22d3ee;
+      --accent3:#34d399;
+      --warn:#fbbf24;
+      --danger:#fb7185;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      --max: 1120px;
+    }
+
+    *{ box-sizing:border-box; }
+    html, body{ height:100%; }
+    body{
+      margin:0;
+      font-family: var(--sans);
+      color: var(--text);
+      background:
+        radial-gradient(1100px 700px at 10% 12%, rgba(124,58,237,.28), transparent 55%),
+        radial-gradient(1000px 600px at 90% 18%, rgba(34,211,238,.20), transparent 55%),
+        radial-gradient(1000px 700px at 55% 96%, rgba(52,211,153,.16), transparent 55%),
+        linear-gradient(180deg, var(--bg0) 0%, var(--bg1) 40%, var(--bg0) 100%);
+      line-height: 1.55;
+      overflow-x:hidden;
+    }
+
+    a{ color: inherit; text-decoration: none; }
+    a:hover{ text-decoration: underline; text-underline-offset: 3px; }
+
+    .skip{
+      position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden;
+    }
+    .skip:focus{
+      left: 16px; top: 16px; width:auto; height:auto;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: rgba(255,255,255,.12);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow2);
+      z-index: 9999;
+    }
+
+    /* NAVBAR */
+    header{
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      padding: 12px 12px 0;
+      pointer-events: none; /* allow only inner nav to catch hover */
+    }
+
+    .navwrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: linear-gradient(180deg, rgba(10,16,34,.70), rgba(10,16,34,.35));
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: var(--shadow2);
+      pointer-events: auto;
+      transition: transform .16s ease, border-color .16s ease, background .16s ease;
+    }
+
+    .navwrap:hover{
+      transform: translateY(-1px);
+      border-color: rgba(255,255,255,.18);
+      background: linear-gradient(180deg, rgba(10,16,34,.78), rgba(10,16,34,.44));
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 10px 12px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      transition: background .14s ease;
+      white-space: nowrap;
+    }
+    .brand:hover{ background: rgba(255,255,255,.06); text-decoration:none; }
+
+    .logo{
+      width: 34px; height: 34px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(124,58,237,.95), rgba(34,211,238,.85));
+      box-shadow: 0 10px 25px rgba(124,58,237,.18), 0 10px 25px rgba(34,211,238,.10);
+      position: relative;
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,.18);
+      flex: 0 0 auto;
+    }
+    .logo::after{
+      content:"";
+      position:absolute; inset:-40% -40%;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.45), transparent 45%);
+      transform: rotate(18deg);
+    }
+
+    .brandname{
+      display:flex;
+      flex-direction: column;
+      line-height: 1.05;
+    }
+    .brandname strong{
+      font-size: 13.5px;
+      letter-spacing: .2px;
+    }
+    .brandname span{
+      font-size: 11.5px;
+      color: var(--muted2);
+    }
+
+    .links{
+      display:flex;
+      align-items:center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      color: rgba(255,255,255,.86);
+      font-size: 13px;
+      line-height: 1;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+      user-select: none;
+    }
+    .pill:hover{
+      transform: translateY(-1px);
+      background: rgba(255,255,255,.085);
+      border-color: rgba(255,255,255,.22);
+      text-decoration:none;
+    }
+
+    .pill.active{
+      border-color: rgba(34,211,238,.38);
+      background: rgba(34,211,238,.10);
+    }
+
+    .cta{
+      display:inline-flex;
+      align-items:center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, rgba(124,58,237,.95), rgba(34,211,238,.85));
+      color: rgba(255,255,255,.96);
+      border: 1px solid rgba(255,255,255,.18);
+      box-shadow: 0 14px 35px rgba(124,58,237,.20), 0 14px 35px rgba(34,211,238,.14);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .2px;
+      transition: transform .12s ease, filter .12s ease;
+      white-space: nowrap;
+    }
+    .cta:hover{
+      transform: translateY(-1px);
+      filter: brightness(1.05);
+      text-decoration:none;
+    }
+
+    .menuBtn{ display:none; }
+
+    @media (max-width: 980px){
+      header{ padding: 10px 10px 0; }
+      .links{ display:none; }
+      .menuBtn{
+        display:inline-flex;
+        align-items:center;
+        gap:10px;
+        padding: 10px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(255,255,255,.12);
+        background: rgba(255,255,255,.05);
+        color: rgba(255,255,255,.9);
+        font-size: 13px;
+        cursor: pointer;
+        user-select: none;
+      }
+      .menuBtn:hover{
+        background: rgba(255,255,255,.085);
+        border-color: rgba(255,255,255,.22);
+      }
+    }
+
+    /* MOBILE DRAWER */
+    .drawer{
+      max-width: var(--max);
+      margin: 10px auto 0;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.06);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: var(--shadow2);
+      overflow:hidden;
+      display:none;
+      pointer-events:auto;
+    }
+    .drawer.open{ display:block; }
+    .drawerGrid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 12px;
+    }
+    .drawerGrid a{
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+      padding: 12px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      font-size: 13px;
+      color: rgba(255,255,255,.88);
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+    }
+    .drawerGrid a:hover{
+      transform: translateY(-1px);
+      background: rgba(255,255,255,.08);
+      border-color: rgba(255,255,255,.20);
+      text-decoration:none;
+    }
+    .drawerGrid .ctaLike{
+      grid-column: 1 / -1;
+      background: linear-gradient(135deg, rgba(124,58,237,.26), rgba(34,211,238,.18));
+      border-color: rgba(34,211,238,.22);
+    }
+    @media (max-width: 420px){
+      .drawerGrid{ grid-template-columns: 1fr; }
+    }
+
+    main{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 18px 18px 70px;
+    }
+
+    /* HERO */
+    .hero{
+      margin-top: 14px;
+      border-radius: calc(var(--radius) + 8px);
+      border: 1px solid rgba(255,255,255,.14);
+      background:
+        radial-gradient(1100px 520px at 12% 5%, rgba(124,58,237,.20), transparent 60%),
+        radial-gradient(1100px 520px at 88% 10%, rgba(34,211,238,.16), transparent 60%),
+        linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position: relative;
+    }
+    .heroInner{
+      padding: 34px 18px 20px;
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 18px;
+      align-items: start;
+    }
+    @media (max-width: 980px){
+      .heroInner{ grid-template-columns: 1fr; }
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap: 10px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.06);
+      color: rgba(255,255,255,.84);
+      font-size: 13px;
+      width: fit-content;
+    }
+    .eyebrow b{
+      font-family: var(--mono);
+      letter-spacing: .35px;
+    }
+
+    h1{
+      margin: 14px 0 10px;
+      font-size: clamp(30px, 4.2vw, 50px);
+      line-height: 1.08;
+      letter-spacing: -0.9px;
+    }
+
+    .sub{
+      margin: 0;
+      max-width: 72ch;
+      color: var(--muted);
+      font-size: clamp(15px, 2.1vw, 18px);
+    }
+
+    .heroActions{
+      margin-top: 18px;
+      display:flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items:center;
+    }
+
+    .ghost{
+      display:inline-flex;
+      align-items:center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      color: rgba(255,255,255,.9);
+      font-size: 13px;
+      font-weight: 700;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+      white-space: nowrap;
+    }
+    .ghost:hover{
+      transform: translateY(-1px);
+      background: rgba(255,255,255,.085);
+      border-color: rgba(255,255,255,.22);
+      text-decoration:none;
+    }
+
+    .trustRow{
+      margin-top: 18px;
+      display:flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      color: var(--muted2);
+      font-size: 13px;
+      align-items:center;
+    }
+    .dot{
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.35);
+    }
+
+    /* RIGHT PANEL */
+    .card{
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      box-shadow: var(--shadow2);
+      padding: 16px;
+    }
+
+    .card h2{
+      margin: 0 0 8px;
+      font-size: 16px;
+      letter-spacing: -0.2px;
+    }
+
+    .card p{
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .quickLinks{
+      display:flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .ql{
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+      padding: 11px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      font-size: 13px;
+      color: rgba(255,255,255,.88);
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+    }
+    .ql:hover{
+      transform: translateY(-1px);
+      background: rgba(255,255,255,.08);
+      border-color: rgba(255,255,255,.20);
+      text-decoration:none;
+    }
+    .arrow{ opacity:.65; font-family: var(--mono); }
+
+    .miniCallout{
+      margin-top: 12px;
+      padding: 12px;
+      border-radius: var(--radius2);
+      border: 1px solid rgba(34,211,238,.22);
+      background: linear-gradient(180deg, rgba(34,211,238,.12), rgba(255,255,255,.04));
+      color: rgba(255,255,255,.86);
+      font-size: 13px;
+    }
+
+    /* SECTIONS */
+    .section{
+      margin-top: 18px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      box-shadow: var(--shadow2);
+      overflow:hidden;
+    }
+    .sectionInner{
+      padding: 18px;
+    }
+
+    .section h3{
+      margin: 0 0 10px;
+      font-size: 16px;
+      letter-spacing: -0.2px;
+    }
+
+    .grid3{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 12px;
+    }
+    @media (max-width: 980px){
+      .grid3{ grid-template-columns: 1fr; }
+    }
+
+    .feature{
+      border-radius: var(--radius2);
+      border: 1px solid rgba(255,255,255,.12);
+      background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.04));
+      padding: 14px;
+      transition: transform .12s ease, border-color .12s ease, background .12s ease;
+      min-height: 140px;
+    }
+    .feature:hover{
+      transform: translateY(-2px);
+      border-color: rgba(255,255,255,.20);
+      background: linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.05));
+    }
+
+    .tag{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      font-size: 12px;
+      color: rgba(255,255,255,.84);
+    }
+
+    .feature h4{
+      margin: 10px 0 6px;
+      font-size: 15px;
+      letter-spacing: -0.15px;
+    }
+    .feature p{
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* FOOTER */
+    footer{
+      max-width: var(--max);
+      margin: 28px auto 0;
+      padding: 20px 18px 46px;
+      color: var(--muted2);
+      font-size: 13px;
+    }
+    .foot{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items:center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(255,255,255,.10);
+      padding-top: 18px;
+    }
+    .foot a{ opacity:.9; }
+    .foot a:hover{ opacity: 1; }
+
+    /* tiny text polish */
+    .fine{
+      margin-top: 10px;
+      color: rgba(255,255,255,.52);
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header>
+    <div class="navwrap" role="banner" aria-label="Site navigation">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="credithelp.info home">
+          <span class="logo" aria-hidden="true"></span>
+          <span class="brandname">
+            <strong>credithelp<span style="opacity:.75">.info</span></strong>
+            <span>Clarity for stressful money moments</span>
+          </span>
+        </a>
+
+        <button class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="drawer">
+          <span style="font-family:var(--mono); opacity:.8;">≡</span>
+          Menu
+        </button>
+
+        <nav class="links" aria-label="Primary links">
+          <a class="pill active" href="index.html">Home</a>
+          <a class="pill" href="credit-basics.html">Credit Basics</a>
+          <a class="pill" href="tips-guides.html">Tips &amp; Guides</a>
+          <a class="pill" href="resources.html">Resources</a>
+          <a class="pill" href="contact.html">Contact</a>
+          <a class="pill" href="about.html">About</a>
+        </nav>
+
+        <a class="cta" href="tips-guides.html" aria-label="Start with tips and guides">Start Here →</a>
+      </div>
+    </div>
+
+    <div class="drawer" id="drawer" aria-label="Mobile menu">
+      <div class="drawerGrid">
+        <a href="index.html">Home <span class="arrow">→</span></a>
+        <a href="credit-basics.html">Credit Basics <span class="arrow">→</span></a>
+        <a href="tips-guides.html">Tips &amp; Guides <span class="arrow">→</span></a>
+        <a href="resources.html">Resources <span class="arrow">→</span></a>
+        <a href="contact.html">Contact <span class="arrow">→</span></a>
+        <a href="about.html">About <span class="arrow">→</span></a>
+        <a class="ctaLike" href="tips-guides.html">Start Here (Fast wins) <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="Homepage hero">
+      <div class="heroInner">
+        <div>
+          <span class="eyebrow"><b>Credit help</b> you can actually use</span>
+
+          <h1>
+            Credit Help That Feels Human: Build Your Credit Score, Fix Credit Report Errors, and Breathe Again
+          </h1>
+
+          <p class="sub">
+            If credit stress is keeping you up, you’re not alone. Late payment
