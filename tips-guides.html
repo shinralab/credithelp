@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>7 Tips for Building Credit in 2026 | credithelp.info</title>
+  <meta name="description" content="7 practical, modern tips to build (or rebuild) credit in 2026—without getting played by fees, myths, or gimmicks." />
+  <style>
+    :root{
+      --bg: #0b1020;
+      --panel: rgba(255,255,255,.06);
+      --panel2: rgba(255,255,255,.09);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.72);
+      --muted2: rgba(255,255,255,.58);
+      --border: rgba(255,255,255,.14);
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --shadow2: 0 12px 30px rgba(0,0,0,.35);
+      --radius: 18px;
+      --radius2: 14px;
+      --accent1: #7c3aed;
+      --accent2: #22d3ee;
+      --accent3: #34d399;
+      --danger: #fb7185;
+      --warn: #fbbf24;
+      --ok: #34d399;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      --max: 980px;
+    }
+
+    *{ box-sizing: border-box; }
+    html, body{ height: 100%; }
+    body{
+      margin:0;
+      font-family: var(--sans);
+      color: var(--text);
+      background:
+        radial-gradient(1000px 600px at 15% 10%, rgba(124,58,237,.28), transparent 55%),
+        radial-gradient(900px 500px at 85% 20%, rgba(34,211,238,.22), transparent 55%),
+        radial-gradient(900px 600px at 55% 95%, rgba(52,211,153,.18), transparent 55%),
+        linear-gradient(180deg, #070a14 0%, #0b1020 35%, #070a14 100%);
+      line-height: 1.6;
+    }
+
+    a{ color: inherit; text-decoration: none; }
+    a:hover{ text-decoration: underline; text-underline-offset: 3px; }
+
+    .skip{
+      position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden;
+    }
+    .skip:focus{
+      left: 16px; top: 16px; width: auto; height: auto;
+      padding: 10px 12px; border-radius: 12px;
+      background: rgba(255,255,255,.12);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow2);
+      z-index: 9999;
+    }
+
+    header{
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      background: linear-gradient(180deg, rgba(11,16,32,.78), rgba(11,16,32,.45));
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .nav{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 14px 18px;
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      font-weight: 700;
+      letter-spacing: .2px;
+      white-space: nowrap;
+    }
+
+    .logo{
+      width: 34px; height: 34px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(124,58,237,.95), rgba(34,211,238,.85));
+      box-shadow: 0 10px 25px rgba(124,58,237,.18), 0 10px 25px rgba(34,211,238,.10);
+      position: relative;
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,.18);
+    }
+    .logo::after{
+      content:"";
+      position:absolute; inset: -40% -40%;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.45), transparent 45%);
+      transform: rotate(18deg);
+    }
+
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      color: rgba(255,255,255,.86);
+      font-size: 13px;
+      line-height: 1;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+    }
+    .pill:hover{
+      transform: translateY(-1px);
+      background: rgba(255,255,255,.085);
+      border-color: rgba(255,255,255,.22);
+      text-decoration: none;
+    }
+
+    main{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 26px 18px 70px;
+    }
+
+    .hero{
+      padding: 34px 18px 24px;
+      border-radius: calc(var(--radius) + 6px);
+      background:
+        radial-gradient(900px 480px at 10% 0%, rgba(124,58,237,.20), transparent 60%),
+        radial-gradient(900px 480px at 90% 5%, rgba(34,211,238,.16), transparent 60%),
+        linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+      border: 1px solid rgba(255,255,255,.14);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow:hidden;
+    }
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(255,255,255,.15), transparent 35%),
+        radial-gradient(circle at 80% 0%, rgba(255,255,255,.10), transparent 35%);
+      pointer-events:none;
+    }
+
+    .kicker{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.06);
+      color: rgba(255,255,255,.84);
+      font-size: 13px;
+    }
+
+    .kicker b{
+      font-family: var(--mono);
+      font-weight: 700;
+      letter-spacing: .3px;
+    }
+
+    h1{
+      margin: 14px 0 10px;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.15;
+      letter-spacing: -0.6px;
+    }
+
+    .subtitle{
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      font-size: clamp(15px, 2.1vw, 18px);
+    }
+
+    .meta{
+      margin-top: 18px;
+      display:flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      color: var(--muted2);
+      font-size: 13px;
+      align-items:center;
+    }
+
+    .meta .dot{
+      width: 4px; height: 4px; border-radius: 50%;
+      background: rgba(255,255,255,.35);
+    }
+
+    .grid{
+      margin-top: 18px;
+      display:grid;
+      grid-template-columns: 1.6fr .9fr;
+      gap: 18px;
+      align-items:start;
+    }
+
+    @media (max-width: 900px){
+      .grid{ grid-template-columns: 1fr; }
+      header{ position: relative; }
+    }
+
+    article{
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: var(--shadow2);
+      overflow:hidden;
+    }
+
+    .content{
+      padding: 20px 18px;
+    }
+
+    .content p{
+      margin: 12px 0;
+      color: rgba(255,255,255,.84);
+    }
+
+    .content h2{
+      margin: 22px 0 10px;
+      font-size: 20px;
+      letter-spacing: -0.25px;
+    }
+
+    .tip{
+      margin: 14px 0;
+      padding: 14px 14px 14px 14px;
+      border-radius: var(--radius2);
+      border: 1px solid rgba(255,255,255,.12);
+      background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.04));
+    }
+
+    .tip-head{
+      display:flex;
+      align-items:flex-start;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.06);
+      font-size: 12px;
+      color: rgba(255,255,255,.85);
+      white-space: nowrap;
+    }
+
+    .num{
+      width: 30px; height: 30px;
+      display:grid; place-items:center;
+      border-radius: 10px;
+      font-family: var(--mono);
+      font-weight: 800;
+      background: linear-gradient(135deg, rgba(124,58,237,.35), rgba(34,211,238,.20));
+      border: 1px solid rgba(255,255,255,.18);
+    }
+
+    ul{
+      margin: 10px 0 0 18px;
+      padding: 0;
+      color: rgba(255,255,255,.82);
+    }
+    li{ margin: 8px 0; }
+
+    .callout{
+      margin: 18px 0 6px;
+      padding: 14px 14px;
+      border-radius: var(--radius2);
+      border: 1px solid rgba(255,255,255,.14);
+      background: linear-gradient(180deg, rgba(34,211,238,.11), rgba(255,255,255,.04));
+    }
+
+    .callout strong{ display:block; margin-bottom: 4px; }
+
+    .aside{
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: var(--shadow2);
+      padding: 16px;
+      position: sticky;
+      top: 78px;
+    }
+    @media (max-width: 900px){
+      .aside{ position: static; }
+    }
+
+    .aside h3{
+      margin: 4px 0 10px;
+      font-size: 16px;
+      letter-spacing: -0.2px;
+    }
+
+    .mini{
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .toc{
+      margin-top: 12px;
+      display:flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .toc a{
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      color: rgba(255,255,255,.86);
+      font-size: 13px;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+    }
+    .toc a:hover{
+      transform: translateY(-1px);
+      background: rgba(255,255,255,.075);
+      border-color: rgba(255,255,255,.22);
+      text-decoration:none;
+    }
+
+    .arrow{
+      opacity: .65;
+      font-family: var(--mono);
+    }
+
+    .checklist{
+      margin-top: 14px;
+      padding: 14px;
+      border-radius: var(--radius2);
+      background: linear-gradient(180deg, rgba(124,58,237,.10), rgba(255,255,255,.04));
+      border: 1px solid rgba(255,255,255,.12);
+    }
+
+    .checklist h4{
+      margin: 0 0 8px;
+      font-size: 14px;
+      letter-spacing: -0.1px;
+    }
+
+    .checks{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display:flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+    .checks li{
+      display:flex;
+      gap: 10px;
+      align-items:flex-start;
+      color: rgba(255,255,255,.82);
+      font-size: 13px;
+      margin: 0;
+    }
+    .tick{
+      width: 18px; height: 18px;
+      border-radius: 7px;
+      display:grid; place-items:center;
+      background: rgba(52,211,153,.16);
+      border: 1px solid rgba(52,211,153,.35);
+      flex: 0 0 auto;
+      margin-top: 1px;
+      font-family: var(--mono);
+      font-weight: 800;
+      font-size: 12px;
+      color: rgba(255,255,255,.9);
+    }
+
+    footer{
+      max-width: var(--max);
+      margin: 30px auto 0;
+      padding: 20px 18px 40px;
+      color: var(--muted2);
+      font-size: 13px;
+    }
+
+    .foot{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items:center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(255,255,255,.10);
+      padding-top: 18px;
+    }
+
+    .note{
+      opacity: .9;
+      max-width: 92ch;
+    }
+
+    .cta{
+      display:inline-flex;
+      align-items:center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, rgba(124,58,237,.95), rgba(34,211,238,.85));
+      color: rgba(255,255,255,.95);
+      border: 1px solid rgba(255,255,255,.18);
+      box-shadow: 0 14px 35px rgba(124,58,237,.20), 0 14px 35px rgba(34,211,238,.14);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .2px;
+      transition: transform .12s ease, filter .12s ease;
+      white-space: nowrap;
+    }
+    .cta:hover{
+      transform: translateY(-1px);
+      filter: brightness(1.05);
+      text-decoration:none;
+    }
+
+    /* small readability polish */
+    .content code{
+      font-family: var(--mono);
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      color: rgba(255,255,255,.9);
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header>
+    <div class="nav">
+      <div class="brand" aria-label="credithelp.info">
+        <span class="logo" aria-hidden="true"></span>
+        <span>credithelp<span style="opacity:.75">.info</span></span>
+      </div>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a class="pill" href="#">Home</a>
+        <a class="pill" href="#">Blog</a>
+        <a class="pill" href="#">Tools</a>
+        <a class="pill" href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="Article intro">
+      <span class="kicker"><b>2026</b> • Credit Building • Practical Guide</span>
+      <h1>7 Tips for Building Credit in 2026</h1>
+      <p class="subtitle">
+        Building credit isn’t about doing “credit hacks.” It’s about proving, month after month, that you’re predictable.
+        Use these seven moves to build (or rebuild) credit without paying unnecessary fees or playing games with your score.
+      </p>
+      <div class="meta" aria-label="Article metadata">
+        <span>Updated: <time datetime="2026-02-07">Feb 7, 2026</time></span>
+        <span class="dot" aria-hidden="true"></span>
+        <span>Read time: ~6 minutes</span>
+        <span class="dot" aria-hidden="true"></span>
+        <span>Author: MF DOGE</span>
+      </div>
+    </section>
+
+    <div class="grid">
+      <article aria-label="Blog post">
+        <div class="content">
+          <p>
+            If you’re starting from scratch, the goal is simple: get a few accounts reporting, never miss a due date,
+            keep balances low, and avoid unnecessary applications. If you’re rebuilding, the goal is the same—just with
+            extra focus on cleaning up errors and managing utilization.
+          </p>
+
+          <div class="callout">
+            <strong>Quick reality check</strong>
+            A credit score is a risk score. In 2026, lenders still reward boring behavior: consistent payments, low revolving
+            balances, and stable account history.
+          </div>
+
+          <section class="tip" id="tip-1">
+            <div class="tip-head">
+              <div style="display:flex; gap:10px; align-items:flex-start;">
+                <div class="num" aria-hidden="true">1</div>
+                <div>
+                  <h2 style="margin:0;">Set up autopay for at least the minimum—today</h2>
+                  <div class="badge" aria-label="Impact: high"><span style="opacity:.8;">Impact:</span> High</div>
+                </div>
+              </div>
+            </div>
+            <p>
+              Payment history is the single biggest driver for most scoring models. One late payment can haunt you for years.
+              The move: turn on autopay for the minimum payment on every account, then pay extra manually if you want.
+            </p>
+            <ul>
+              <li>Use calendar reminders 3–5 days before the due date anyway (autopay can fail).</li>
+              <li>If cash flow is tight, switch due dates so everything hits right after payday.</li>
+              <li>New to credit? This one habit does more than any “credit trick.”</li>
+            </ul>
+          </section>
+
+          <section class="tip" id="tip-2">
+            <div class="tip-head">
+              <div style="display:flex; gap:10px; align-items:flex-start;">
+                <div class="num" aria-hidden="true">2</div>
+                <div>
+                  <h2 style="margin:0;">Keep credit card utilization boringly low</h2>
+                  <div class="badge" aria-label="Impact: high"><span style="opacity:.8;">Impact:</span> High</div>
+                </div>
+              </div>
+            </div>
+            <p>
+              Utilization is basically “how maxed out you look.” The simplest rule: keep your reported balance under
+              <code>10%</code> if you can, and definitely under <code>30%</code>. If you use your card heavily, pay it down
+              before the statement closes so the reported balance stays low.
+            </p>
+            <ul>
+              <li>Best practice: pay twice a month (mid-cycle + before statement close).</li>
+              <li>High limits help—if you don’t carry high balances. Don’t chase limits you can’t handle.</li>
+              <li>One high reported balance can dip your score, even if you pay in full later.</li>
+            </ul>
+          </section>
+
+          <section class="tip" id="tip-3">
+            <div class="tip-head">
+              <div style="display:flex; gap:10px; align-items:flex-start;">
+                <div class="num" aria-hidden="true">3</div>
+                <div>
+                  <h2 style="margin:0;">Start with the right “starter” account (and avoid fee traps)</h2>
+                  <div class="badge" aria-label="Impact: medium"><span style="opacity:.8;">Impact:</span> Medium</div>
+                </div>
+              </div>
+            </div>
+            <p>
+              If you’re new or rebuilding, you don’t need a fancy card—you need a card that reports to all three bureaus,
+              has predictable terms, and doesn’t drain you with junk fees.
+            </p>
+            <ul>
+              <li><b>Secured cards</b>: solid option if you can fund a deposit and want a clean rebuild path.</li>
+              <li><b>Credit-builder loans</b>: can help diversify your profile, but only if payments are easy for you.</li>
+              <li><b>Be careful</b> with “guaranteed approval” offers that pack monthly fees + high APR + add-ons.</li>
+            </ul>
+          </section>
+
+          <section class="tip" id="tip-4">
+            <div class="tip-head">
+              <div style="display:flex; gap:10px; align-items:flex-start;">
+                <div class="num" aria-hidden="true">4</div>
+                <div>
+                  <h2 style="margin:0;">Ask for credit limit increases the smart way</h2>
+                  <div class="badge" aria-label="Impact: medium"><span style="opacity:.8;">Impact:</span> Medium</div>
+                </div>
+              </div>
+            </div>
+            <p>
+              Higher limits can lower utilization, which can help scores. But timing matters: request increases after
+              3–6 months of on-time payments and stable balances. If the issuer does a hard pull, consider skipping it.
+            </p>
+            <ul>
+              <li>Look for “no hard inquiry” CLIs in your issuer’s app or settings.</li>
+              <li>Don’t request increases if you’re carrying high balances—you’ll just look riskier.</li>
+              <li>Never treat limit increases like free money. It’s just more rope.</li>
+            </ul>
+          </section>
+
+          <section class="tip" id="tip-5">
+            <div class="tip-head">
+              <div style="display:flex; gap:10px; align-items:flex-start;">
+                <div class="num" aria-hidden="true">5</div>
+                <div>
+                  <h2 style="margin:0;">Keep older accounts open (when they’re not toxic)</h2>
+                  <div class="badge" aria-label="Impact: medium"><span style="opacity:.8;">Impact:</span> Medium</div>
+                </div>
+              </div>
+            </div>
+            <p>
+              Age of accounts matters. If you have an older card with no annual fee, closing it can reduce your available
+              credit and shorten your average account age. Keep it open, keep it active, and keep it paid.
+            </p>
+            <ul>
+              <li>Put one small recurring bill on it (like a subscription) and autopay it.</li>
+              <li>If it has an annual fee you don’t benefit from, consider downgrading instead of closing.</li>
+              <li>Close accounts that cause real harm (e.g., predatory fees you can’t escape).</li>
+            </ul>
+          </section>
+
+          <section class="tip" id="tip-6">
+            <div class="tip-head">
+              <div style="display:flex; gap:10px; align-items:flex-start;">
+                <div class="num" aria-hidden="true">6</div>
+                <div>
+                  <h2 style="margin:0;">Check your reports and dispute real errors</h2>
+                  <div class="badge" aria-label="Impact: high"><span style="opacity:.8;">Impact:</span> High</div>
+                </div>
+              </div>
+            </div>
+            <p>
+              Don’t guess—verify. Mistakes happen: wrong late payments, duplicate accounts, outdated balances, accounts that
+              aren’t yours. Pull your reports, scan for red flags, and dispute only what’s inaccurate.
+            </p>
+            <ul>
+              <li>Look for: accounts you don’t recognize, incorrect limits, late marks you can prove are wrong.</li>
+              <li>Dispute with documentation when possible (statements, confirmation emails, bank records).</li>
+              <li>Avoid “dispute everything” tactics—focus on actual errors.</li>
+            </ul>
+          </section>
+
+          <section class="tip" id="tip-7">
+            <div class="tip-head">
+              <div style="display:flex; gap:10px; align-items:flex-start;">
+                <div class="num" aria-hidden="true">7</div>
+                <div>
+                  <h2 style="margin:0;">Slow down on new applications (hard inquiries add up)</h2>
+                  <div class="badge" aria-label="Impact: medium"><span style="opacity:.8;">Impact:</span> Medium</div>
+                </div>
+              </div>
+            </div>
+            <p>
+              Each new application can create a hard inquiry and lower your average account age. If you’re trying to build
+              momentum, avoid applying for multiple accounts in a short window unless there’s a clear plan and payoff.
+            </p>
+            <ul>
+              <li>Only apply when you can comfortably manage the account for years, not months.</li>
+              <li>Rate-shopping (like auto loans) can be treated differently—still, keep it tight and timed.</li>
+              <li>The fastest way to “build” is consistency, not volume.</li>
+            </ul>
+          </section>
+
+          <div class="callout" style="background: linear-gradient(180deg, rgba(52,211,153,.12), rgba(255,255,255,.04));">
+            <strong>Simple 30-day plan</strong>
+            Turn on autopay, get one solid reporting account, keep utilization under 10–30%, and don’t apply for anything else.
+            Do that for 30 days, then repeat it for 6–12 months. That’s the game.
+          </div>
+
+          <p style="margin-top: 18px; color: rgba(255,255,255,.78);">
+            
+          </p>
+        </div>
+      </article>
+
+      <aside class="aside" aria-label="Sidebar">
+        <h3>Jump to a tip</h3>
+        <p class="mini">Skim fast, then come back and implement one change today.</p>
+
+        <nav class="toc" aria-label="Table of contents">
+          <a href="#tip-1"><span>1) Autopay minimums</span><span class="arrow">→</span></a>
+          <a href="#tip-2"><span>2) Utilization low</span><span class="arrow">→</span></a>
+          <a href="#tip-3"><span>3) Starter accounts</span><span class="arrow">→</span></a>
+          <a href="#tip-4"><span>4) Limit increases</span><span class="arrow">→</span></a>
+          <a href="#tip-5"><span>5) Keep old accounts</span><span class="arrow">→</span></a>
+          <a href="#tip-6"><span>6) Fix report errors</span><span class="arrow">→</span></a>
+          <a href="#tip-7"><span>7) Fewer applications</span><span class="arrow">→</span></a>
+        </nav>
+
+        <div class="checklist" aria-label="Quick checklist">
+          <h4>This week’s checklist</h4>
+          <ul class="checks">
+            <li><span class="tick">✓</span><span>Autopay enabled for every account (minimum payment).</span></li>
+            <li><span class="tick">✓</span><span>One card balance stays under 10–30% before statement close.</span></li>
+            <li><span class="tick">✓</span><span>Only 1 credit application max (or none) this month.</span></li>
+            <li><span class="tick">✓</span><span>Reports checked for obvious errors and identity issues.</span></li>
+          </ul>
+        </div>
+
+        <div style="margin-top: 14px; display:flex; gap:10px; flex-wrap: wrap;">
+          <a class="cta" href="#main">Read again, implement</a>
+          <a class="pill" href="#" style="border-color: rgba(255,255,255,.18);">Print / Save</a>
+        </div>
+
+        <p class="mini" style="margin-top: 12px;">
+          Disclaimer: This is educational info, not legal or financial advice. Your situation may vary.
+        </p>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="foot">
+      <div class="note">
+        <strong style="color: rgba(255,255,255,.85);">credithelp.info</strong><br />
+        Practical credit education, clear steps, no fluff.
+      </div>
+      <div style="display:flex; gap:10px; flex-wrap: wrap;">
+        <a class="pill" href="#">Privacy</a>
+        <a class="pill" href="#">Terms</a>
+        <a class="pill" href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
